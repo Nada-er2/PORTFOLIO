@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <title>Mon_Portfolio</title>
+</head>
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+     <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Nada Er-rissouni</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                const typed = new Typed('.multiple-text', {
+                    strings: ['full-stack developer', 'frontend developer', 'backend developer'],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    backDelay: 1000,
+                    loop: true
+                });
+            </script>
+            <div class="social-media">
+                <a href="https://wa.me/212659868487" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/nada-er-rissouni-84a919324/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/nada_errissouni/ " target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/Nada-er2" target="_blank"><i class='bx bxl-github'></i></a> 
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nada.errissouni@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            </div>
+            <a href="#about" class="btn">Read More</a>
+        </div>
+        <!-- <div class="home-img">
+            <img src="images/photo_home.png" alt="Home">
+        </div> -->
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about_image.png" alt="About">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full-Stack Developer</h3>
+            <p>A second-year student in Digital Development (Full-Stack option), passionate about creating modern and high-performance user interfaces. Curious and motivated, I specialize in developing responsive, accessible, and well-structured websites while following the best frontend practices.</p>
+            <ul class="about__info">
+                 <li><strong>Age:</strong> 20 years old</li>
+                 <li><strong>Location:</strong> Marrakech, Morocco</li>
+                 <li><strong>Studies:</strong> Specialized Technician in Digital Development (ISTA NTIC SYBA)</li>
+                 <li><strong>Languages:</strong> French, English, Arabic</li>
+            </ul>
+            <a href="cv/Nada ER-RISSOUNI.pdf" download class="btn"> Download CV</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-desktop'></i>
+                <h3>Frontend Development</h3>
+                <p>I develop modern, interactive, and responsive user interfaces using HTML, CSS, JavaScript and React.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>                
+                <h3>Backend Development</h3>
+                <p>I create secure, high-performance, and scalable backend solutions using PHP, Laravel, Python, and REST APIs.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-server'></i>                
+                <h3>Database Management</h3>
+                <p>I manage structured and unstructured databases using MySQL and NoSQL .</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills__container container grid ">
+            <div class="skills__tabs">
+                <div class="skills__header skills__active" data-target="#frontend">
+                    <i class="bx bx-code-curly skills__icon"></i>
+                
+                    <div>
+                       <h1 class="skills__title">Frontend Developer</h1>
+                    </div>
+                    <i class='bx bx-chevron-down skills__arrow'></i>
+                </div>
+            
+                <div class="skills__header" data-target="#backend">
+                    <i class='bx bx-server skills__icon'></i>
+                    
+                    <div>
+                        <h1 class="skills__title">Backend Developer</h1>
+                    </div>
+                    <i class='bx bx-chevron-down skills__arrow'></i>
+                </div>
+            </div>
+
+        <div class="skills__content">
+                <div class="skills__group skills__active" data-content id="frontend">
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">95%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 95%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">70%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 70%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__number">60%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 60%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills__number">80%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 80%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Tailwind</h3>
+                                <span class="skills__number">30%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 30%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="skills__group" data-content id="backend">
+                    <div class="skills-grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__number">70%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 70%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PHP</h3>
+                                <span class="skills__number">90%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 90%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Laravel</h3>
+                                <span class="skills__number">80%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 80%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MySQL/NoSQL</h3>
+                                <span class="skills__number">80%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 80%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Git</h3>
+                                <span class="skills__number">85%</span>                  
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage" style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    </section>
+
+    <!-- portfolio section design -->
+     <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/projet_devour.png" alt="image de projet">
+                <div class="portfolio-layer">
+                    <h3>Devour</h3>
+                    <p>Accompagnement d’une start-up dans l’optimisation de son business model et la levée de fonds, aboutissant à une croissance rapide.</p>
+                    <div class="outils">
+                        <a href="#" class="html"><i class='bx bxl-html5' ></i></a>
+                        <a href="#" class="css"><i class='bx bxl-css3' ></i></a>
+                        <a href="#" class="js"><i class='bx bxl-javascript' ></i></a>
+                    </div>
+                    <a href="https://nada-er2.github.io/Devour/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+           </div>
+
+            <div class="portfolio-box">
+                <img src="images/projet_pizza.png" alt="image de projet">
+                <div class="portfolio-layer">
+                    <h3>WEB PIZZA</h3>
+                    <p>"WEB PIZZA" est un site de commande en ligne qui propose une variété de pizzas, burgers, frites et autres plats. Il offre un menu attractif, des avis clients et une interface simple pour faciliter les commandes. </p>
+                    <div class="outils">
+                        <a href="#" class="html"><i class='bx bxl-html5' ></i></a>
+                        <a href="#" class="css"><i class='bx bxl-css3' ></i></a>
+                    </div>
+                    <a href="https://nada-er2.github.io/Web-Pizza/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/rosée d'or.png" alt="image de projet">
+                <div class="portfolio-layer">
+                    <h3>Rosée D'or</h3>
+                    <p>Rosee_d-OR est un site élégant dédié à la vente de parfums raffinés pour hommes et femmes, ainsi que des packs exclusifs. </p>
+                    <div class="outils">
+                        <a href="#" class="php"><i class='bx bxl-php'></i></a>
+                        <a href="#" class="html"><i class='bx bxl-html5' ></i></a>
+                        <a href="#" class="css"><i class='bx bxl-css3' ></i></a>
+                        <a href="#" class="js"><i class='bx bxl-javascript' ></i></a>
+                    </div>
+                    <a href="https://nada-er2.github.io/Rosee_d-OR/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form id="my-form" action="https://formspree.io/f/mjkgwqno" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <p id="my-form-status"></p>
+    </section>
+    
+    <!-- Script pour gérer l'envoi du formulaire -->
+    <script>
+    document.getElementById("my-form").addEventListener("submit", async function(event) {
+        event.preventDefault();
+        let form = event.target;
+        let status = document.getElementById("my-form-status");
+        let formData = new FormData(form);
+        
+        let response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+    
+        if (response.ok) {
+            status.innerHTML = "✅ Message envoyé avec succès !";
+            form.reset();
+        } else {
+            status.innerHTML = "❌ Une erreur est survenue. Veuillez réessayer.";
+        }
+    });
+    </script>
+    
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 | Nada Er-rissouni</p>
+        </div>
+        <div class="footer-iconTop">
+            <div class="social-media">
+                <a href="https://wa.me/212659868487" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/nada-er-rissouni-84a919324/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/nada_errissouni/ " target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/Nada-er2" target="_blank"><i class='bx bxl-github'></i></a> 
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nada.errissouni@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- typed js
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     -->
+
+    <!-- script -->
+     <script src="script.js"></script>
+    
+</body>
+</html>
